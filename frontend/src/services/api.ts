@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Crie uma instância do axios para reutilização
 const api = axios.create({
-  baseURL: 'http://localhost:3333', // Altere para a URL da sua API
+  baseURL: 'https://waffle-teste-tecnico.onrender.com',
   headers: {
     'Content-Type': 'application/json',
   },

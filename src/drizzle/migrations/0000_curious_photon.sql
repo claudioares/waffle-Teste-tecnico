@@ -9,7 +9,7 @@ CREATE TABLE "badges" (
 CREATE TABLE "openings" (
 	"id" uuid PRIMARY KEY DEFAULT gen_random_uuid() NOT NULL,
 	"date" timestamp DEFAULT now(),
-	"post_id" text NOT NULL,
+	"post_id" text,
 	"utm_source" text,
 	"utm_medium" text,
 	"utm_campaign" text,

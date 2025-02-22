@@ -1,6 +1,6 @@
 export interface IOpeningWebhook {
   email: string;
-  postId: string;
+  postId?: string;
   utmSource?: string;
   utmMedium?: string;
   utmCampaign?: string;

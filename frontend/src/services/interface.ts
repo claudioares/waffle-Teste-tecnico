@@ -18,3 +18,13 @@ export interface IUserResponse  {
     badges: any[]; 
   };
 };
+
+export interface IUTMData {
+  date: string;
+  id: string;
+  postId: string;
+  utmCampaign: string | null;
+  utmChannel: string | null;
+  utmMedium: string | null;
+  utmSource: string;
+}

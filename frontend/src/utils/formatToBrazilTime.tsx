@@ -1,5 +1,3 @@
-
-
 export const formatToBrazilianTime = (originalDate: string): string => {
   const date = new Date(originalDate);
 

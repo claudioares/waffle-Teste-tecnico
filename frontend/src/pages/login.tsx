@@ -3,12 +3,14 @@ import { useForm } from "react-hook-form";
 import api from "../services/api";
 import { IUserResponse } from "../services/interface";
 import { useNavigate } from 'react-router-dom';
+import useEmailStorage from "../hooks/useEmailStorage";
 
 type FormData = {
   email: string;
 };
 
 export function Login() {
+    const { saveEmail } = useEmailStorage();
     const navigate = useNavigate();
     const {
         register,
@@ -36,9 +38,10 @@ export function Login() {
             });
 
             const responseEmail = response.user.email;
-            console.log(responseEmail, _email.data.email);
+            
             responseEmail === _email.data.email ? navigate('/') : setError("email", { message: "Email invalido" });
 
+            saveEmail(responseEmail);
             return;
 
         } catch (error) {

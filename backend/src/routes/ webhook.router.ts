@@ -3,8 +3,8 @@ import { MethodsUseCase } from '../usecases/methods.usecase';
 import { IOpeningWebhook } from '../interfaces/interfaces';
 
 export async function webhookRoutes(fastify: FastifyInstance) {
-  fastify.post('/webhook/newsletter-opened', async (request, reply) => {
-    const data: IOpeningWebhook = request.body as IOpeningWebhook
+  fastify.get('/', async (request, reply) => {
+    const data: IOpeningWebhook = request.query as IOpeningWebhook
 
     try {
       const useCase = new MethodsUseCase();

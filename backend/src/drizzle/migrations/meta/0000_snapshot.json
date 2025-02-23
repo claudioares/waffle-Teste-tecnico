@@ -1,5 +1,5 @@
 {
-  "id": "86bf4662-f230-46db-b5b0-cafb8fda4ad5",
+  "id": "ef852904-2727-4e87-a1ec-a192f0dbcc93",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -84,7 +84,7 @@
           "name": "post_id",
           "type": "text",
           "primaryKey": false,
-          "notNull": true
+          "notNull": false
         },
         "utm_source": {
           "name": "utm_source",

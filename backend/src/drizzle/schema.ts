@@ -16,7 +16,7 @@ export const users = pgTable('users', {
 export const openings = pgTable('openings', {
   id: uuid('id').defaultRandom().primaryKey(),
   date: timestamp('date').defaultNow(),
-  postId: text('post_id').notNull(),
+  postId: text('post_id'),
   utmSource: text('utm_source'),
   utmMedium: text('utm_medium'),
   utmCampaign: text('utm_campaign'),

@@ -6,13 +6,15 @@
     "dev": "tsx watch --env-file .env src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js",
-    "start:prod": "node dist/server.js"
+    "start:prod": "node dist/server.js",
+    "seed": "tsx --env-file .env seed.ts"
   },
   "keywords": [],
   "author": "Claudio Soares",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@faker-js/faker": "^9.5.0",
     "@fastify/cors": "^10.0.2",
     "@neondatabase/serverless": "^0.10.4",
     "axios": "^1.7.9",

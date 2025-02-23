@@ -13,7 +13,7 @@ export class MethodsUseCase {
 
         const OpeningWebhookSchema = z.object({
             email: z.string(),
-            postId: z.string(),
+            postId: z.string().optional(),
             utmSource: z.string().optional(),
             utmMedium: z.string().optional(),
             utmCampaign: z.string().optional(),
@@ -22,13 +22,8 @@ export class MethodsUseCase {
 
 
         const _data = OpeningWebhookSchema.parse(data);
-        if (!_data.email || !_data.postId) {
-            throw new Error("userId e postId são obrigatórios.");
-        }
-
-        const verifyEmailExists = await this.repositorie.verifyUser(_data.email);
-        if (verifyEmailExists) {
-            return { message: "Email already exists." };
+        if ( !_data.email ) {
+            throw new Error("Email is necessary.");
         }
 
         const newData = {

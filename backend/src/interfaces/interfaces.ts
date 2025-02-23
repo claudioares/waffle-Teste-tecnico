@@ -1,6 +1,6 @@
 export interface IOpeningWebhook {
   email: string;
-  postId: string;
+  postId?: string;
   utmSource?: string;
   utmMedium?: string;
   utmCampaign?: string;
@@ -8,8 +8,14 @@ export interface IOpeningWebhook {
   userId?: number;
 };
 
+interface IUpdateUser {
+  streak: number;
+  lastOpenedAt: Date;
+}
+
 export interface IResponseOpennewsletter {
   message: string
+  user: IUpdateUser
 }
 
 export interface IUserData {

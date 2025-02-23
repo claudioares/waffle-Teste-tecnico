@@ -2,6 +2,6 @@ import { IOpeningWebhook, IResponseOpennewsletter, IUserLogin, UserResponse } fr
 
 export interface IMethodsOpeningsValues {
   login({ email }:IUserLogin):Promise<UserResponse | { error: string }>;
-  create(data:IOpeningWebhook):Promise<IResponseOpennewsletter>;
+  create(data:IOpeningWebhook):Promise<IResponseOpennewsletter | {message: string}>;
   verifyUser(email: string):Promise<boolean>;
 }

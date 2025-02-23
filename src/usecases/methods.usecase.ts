@@ -26,11 +26,6 @@ export class MethodsUseCase {
             throw new Error("Email is necessary.");
         }
 
-        const verifyEmailExists = await this.repositorie.verifyUser(_data.email);
-        if (verifyEmailExists) {
-            return { message: "Email already exists." };
-        }
-
         const newData = {
             email: _data.email,
             postId: _data.postId,

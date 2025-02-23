@@ -78,7 +78,7 @@ O projeto Waffle consiste em um backend e um frontend interligados, desenvolvido
 
 ## 🌐 **Links de Acesso**
 - **API Backend**: [https://waffle-teste-tecnico.onrender.com](https://waffle-teste-tecnico.onrender.com)
-- **Frontend**: [https://plataforma-waffle-tecnico.netlify.app/login](https://plataforma-waffle-tecnico.netlify.app/login)
+- **Frontend**: [https://plataforma-waffle-tecnico.netlify.app/login](https://plataforma-waffle-tecnico.netlify.app/)
 
 ## 🏗️ **Tecnologias Utilizadas**
 
@@ -154,7 +154,7 @@ O projeto Waffle consiste em um backend e um frontend interligados, desenvolvido
 
 ### ✨ **Usuário de Teste**
 - **E-mail**: Carter44@yahoo.com
-- **Acesse a aplicação**: [https://plataforma-waffle-tecnico.netlify.app/login](https://plataforma-waffle-tecnico.netlify.app/login)
+- **Acesse a aplicação**: [https://plataforma-waffle-tecnico.netlify.app/login](https://plataforma-waffle-tecnico.netlify.app/)
 
 ## 📊 **Estrutura do Banco de Dados**
 - Utiliza PostgreSQL hospedado no Neon.
